@@ -1,0 +1,8 @@
+
+@media (max-width: 768px) {
+  .events__card {
+    min-height: 528px;
+  }
+}
+
+

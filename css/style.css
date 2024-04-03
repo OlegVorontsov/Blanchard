@@ -1,0 +1,63 @@
+
+/* glob */
+
+
+.splide__arrow {
+  background: none;
+}
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/*  */
+
+/* gallery */
+
+.gallery__card {
+  min-height: 350px;
+}
+
+.gallery__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* catalog */
+
+
+
+
+
+
+
+
+/* events */
+
+.events__card {
+  min-height: 700px;
+  border: 1px solid #cacaca;
+}
+
+.events__card-top {
+  height: 300px;
+}
+
+.events__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
