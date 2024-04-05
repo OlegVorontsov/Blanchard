@@ -496,7 +496,20 @@ a {
 
 /* contacts-map */
 
+.contacts__map {
+  height: 500px;
+  width: 100%;
+  background-color: var(--color-grey);
+}
 
+/* скрытие элементов copyright */
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+/* черно-белая карта */
+[class*="ground-pane"] {
+  filter:grayscale(1);
+}
 
 /* footer */
 
