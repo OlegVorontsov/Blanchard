@@ -38,97 +38,122 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-reset header__btn">
+      <button id="search-btn" class="btn header__button-search">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="8.79564" height="2.19891" transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="white" />
           <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z" fill="white" />
         </svg>
       </button>
+      <div id="search-open" class="header__search-wrap">
+        <input class="header__input-search" type="search" name="search" id="search" placeholder="Поиск по сайту">
+        <button aria-label="Найти" class="header__button-search header__button-search--active btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.56126" height="1.89031"
+              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#000" />
+            <path
+              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+              stroke="#000" stroke-width="2" />
+          </svg>
+        </button>
+        <button aria-label="Закрыть окно поиска" id="search-close" class="header__search-close btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+              fill="#000" />
+            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+              fill="#000" />
+            <circle cx="12" cy="12" r="11" stroke="#000" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 <body>
-  <section id="hero" class="hero hero__bg">
-    <div class="container">
-      <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
-      <p class="hero__descr">
-        Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
-      </p>
-      <button class="btn-reset hero__btn">Подписаться на&nbsp;рассылку</button>
+  <section id="hero" class="hero">
+    <div class="container hero__bg">
+      <div class="hero__content">
+        <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
+        <p class="hero__descr">
+          Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений
+        </p>
+        <button class="btn hero__btn">Подписаться на&nbsp;рассылку</button>
+      </div>
     </div>
   </section>
   <section id="about" class="about">
     <div class="container">
-      <h2 class="about__title">О&nbsp;нас</h2>
-      <p class="about__descr">
-        Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как
-        способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако,
-        забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели
-        развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения
-        в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
-        и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
-        среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
-      </p>
+      <div class="about__content">
+        <h2 class="about__title">О&nbsp;нас</h2>
+        <p class="about__descr">
+          Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как
+          способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует, однако,
+          забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели
+          развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения
+          в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
+          и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность
+          среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
+        </p>
+      </div>
     </div>
   </section>
   <section id="gallery" class="gallery">
-    <div class="container">
+    <div class="gallery__container">
+      <h2 class="gallery__title">Галерея</h2>
       <div class="gallery__content">
-        <div class="gallery__left">
-          <h2 class="gallery__title">Галерея</h2>
-          <div class="gallery__checkboxes">
-            <label class="gallery__checkbox">
-              <input type="checkbox" class="gallery__checkbox-input">
-              <span class="gallery__checkbox-text">XIX век</span>
-            </label>
-            <label class="gallery__checkbox">
-              <input type="checkbox" class="gallery__checkbox-input">
-              <span class="gallery__checkbox-text">XX век</span>
-            </label>
-            <label class="gallery__checkbox">
-              <input type="checkbox" class="gallery__checkbox-input">
-              <span class="gallery__checkbox-text">Современность</span>
-            </label>
-          </div>
+        <div class="gallery__checkboxes">
+          <label class="gallery__checkbox">
+            <input class="gallery__checkbox-input" type="checkbox">
+            <span class="gallery__checkbox-text">XIX век</span>
+          </label>
+          <label class="gallery__checkbox">
+            <input class="gallery__checkbox-input" type="checkbox">
+            <span class="gallery__checkbox-text">XX век</span>
+          </label>
+          <label class="gallery__checkbox">
+            <input class="gallery__checkbox-input" type="checkbox">
+            <span class="gallery__checkbox-text">Современность</span>
+          </label>
         </div>
-        <div id="gallerySlider" class="splide" role="group" aria-label="Splide Basic HTML Example">
-          <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">Prev</button>
-            <button class="splide__arrow splide__arrow--next">Next</button>
-          </div>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-1.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-2.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-3.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-1.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-2.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="gallery__card">
-                  <img src="/img/gallery-1920-3.jpg" alt="" class="gallery__card-img">
-                </div>
-              </li>
-            </ul>
+        <div class="gallery__right">
+          <div id="gallerySlider" class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">Prev</button>
+              <button class="splide__arrow splide__arrow--next">Next</button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-1.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-2.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-3.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-4.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-5.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="gallery__card">
+                    <img src="/img/gallery-1920-6.jpg" alt="" class="gallery__card-img">
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -147,55 +172,30 @@
         <li class="catalog__item">
           <article class="catalog__art">
             <a href="#" class="catalog__art-link">
-              <div class="catalog__art-pic">
-                <picture>
-                  <source media="(max-width: 575px)" srcset="/img/catalog-1-320.jpg">
-                  <source media="(max-width: 740px)" srcset="/img/catalog-1-768.jpg">
-                  <source media="(max-width: 1200px)" srcset="/img/catalog-1-1024.jpg">
-                  <img src="/img/catalog-1-1920.jpg" alt="portrait of Domeniko Girlandayo" class="catalog__art-img">
-                </picture>
-              </div>
               <div class="catalog__art-content">
-                <h3 class="catalog__art-title">Доменико Гирландайо</h3>
-                <div class="catalog__art-time">
-                  <time datetime="1448-06-02 00:00">2&nbsp;июня 1448</time>
-                  <small>–</small>
-                  <time datetime="1494-01-11 00:00">11&nbsp;января 1494</time>
+                <div class="catalog__art-pic">
+                  <picture>
+                    <source media="(max-width: 575px)" srcset="/img/catalog-1-320.jpg">
+                    <source media="(max-width: 740px)" srcset="/img/catalog-1-768.jpg">
+                    <source media="(max-width: 1200px)" srcset="/img/catalog-1-1024.jpg">
+                    <img src="/img/catalog-1-1920.jpg" alt="portrait of Domeniko Girlandayo" class="catalog__art-img">
+                  </picture>
                 </div>
-                <p class="catalog__art-descr">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
-                  его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года
-                  овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
-                  подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане
-                  Флоренции в&nbsp;костюмах того времени).
-                </p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__art">
-            <a href="#" class="catalog__art-link">
-              <picture>
-                <source media="(max-width: 575px)" srcset="/img/catalog-2-320.jpg">
-                <source media="(max-width: 740px)" srcset="/img/catalog-2-768.jpg">
-                <source media="(max-width: 1200px)" srcset="/img/catalog-2-1024.jpg">
-                <img src="/img/catalog-2-1920.jpg" alt="portrait of Andrea del' Verrokk'o" class="catalog__art-img">
-              </picture>
-              <div class="catalog__art-content">
-                <h3 class="catalog__art-title">Андреа дель Верроккьо</h3>
-                <div class="catalog__art-time">
-                  <time datetime="1435-01-01 00:00">1435</time>
-                  <small>–</small>
-                  <time datetime="1488-10-10 00:00">10&nbsp;октября 1488</time>
+                <div class="catalog__art-right">
+                  <h3 class="catalog__art-title">Доменико Гирландайо</h3>
+                  <div class="catalog__art-time">
+                    <time datetime="1448-06-02 00:00">2&nbsp;июня 1448</time>
+                    <small>–</small>
+                    <time datetime="1494-01-11 00:00">11&nbsp;января 1494</time>
+                  </div>
+                  <p class="catalog__art-descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+                    его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года
+                    овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
+                    подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане
+                    Флоренции в&nbsp;костюмах того времени).
+                  </p>
                 </div>
-                <p class="catalog__art-descr">
-                  Творческий путь молодого Андреа, как и&nbsp;многих знаменитых художников и&nbsp;скульпторов эпохи Возрождения,
-                  начался с&nbsp;обучения и&nbsp;работы в&nbsp;одной из&nbsp;ювелирных мастерских Флоренции. Там он&nbsp;занимался
-                  не&nbsp;только изготовлением драгоценных украшений, но&nbsp;и&nbsp;познавал основы живописи, пластики
-                  и&nbsp;архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в&nbsp;несколько изменённом виде
-                  Андреа заимствовал для своего будущего псевдонима.
-                </p>
               </div>
             </a>
           </article>
@@ -203,26 +203,61 @@
         <li class="catalog__item">
           <article class="catalog__art">
             <a href="#" class="catalog__art-link">
-              <picture>
-                <source media="(max-width: 575px)" srcset="/img/catalog-3-320.jpg">
-                <source media="(max-width: 740px)" srcset="/img/catalog-3-768.jpg">
-                <source media="(max-width: 1200px)" srcset="/img/catalog-3-1024.jpg">
-                <img src="/img/catalog-3-1920.jpg" alt="portrait of Lorenco di Kredi" class="catalog__art-img">
-              </picture>
               <div class="catalog__art-content">
-                <h3 class="catalog__art-title">Лоренцо ди&nbsp;Креди</h3>
-                <div class="catalog__art-time">
-                  <time datetime="1459-01-01 00:00">1459</time>
-                  <small>–</small>
-                  <time datetime="1537-01-12 00:00">12&nbsp;января 1537</time>
+                <div class="catalog__art-pic">
+                  <picture>
+                    <source media="(max-width: 575px)" srcset="/img/catalog-2-320.jpg">
+                    <source media="(max-width: 740px)" srcset="/img/catalog-2-768.jpg">
+                    <source media="(max-width: 1200px)" srcset="/img/catalog-2-1024.jpg">
+                    <img src="/img/catalog-2-1920.jpg" alt="portrait of Andrea del' Verrokk'o" class="catalog__art-img">
+                  </picture>
                 </div>
-                <p class="catalog__art-descr">
-                  Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
-                  его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года
-                  овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
-                  подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане
-                  Флоренции в&nbsp;костюмах того времени).
-                </p>
+                <div class="catalog__art-right">
+                  <h3 class="catalog__art-title">Андреа дель Верроккьо</h3>
+                  <div class="catalog__art-time">
+                    <time datetime="1435-01-01 00:00">1435</time>
+                    <small>–</small>
+                    <time datetime="1488-10-10 00:00">10&nbsp;октября 1488</time>
+                  </div>
+                  <p class="catalog__art-descr">
+                    Творческий путь молодого Андреа, как и&nbsp;многих знаменитых художников и&nbsp;скульпторов эпохи Возрождения,
+                    начался с&nbsp;обучения и&nbsp;работы в&nbsp;одной из&nbsp;ювелирных мастерских Флоренции. Там он&nbsp;занимался
+                    не&nbsp;только изготовлением драгоценных украшений, но&nbsp;и&nbsp;познавал основы живописи, пластики
+                    и&nbsp;архитектуры. Его первым учителем был Джулиано Веррокки, фамилию которого в&nbsp;несколько изменённом виде
+                    Андреа заимствовал для своего будущего псевдонима.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li class="catalog__item">
+          <article class="catalog__art">
+            <a href="#" class="catalog__art-link">
+              <div class="catalog__art-content">
+                <div class="catalog__art-pic">
+                  <picture>
+                    <source media="(max-width: 575px)" srcset="/img/catalog-3-320.jpg">
+                    <source media="(max-width: 740px)" srcset="/img/catalog-3-768.jpg">
+                    <source media="(max-width: 1200px)" srcset="/img/catalog-3-1024.jpg">
+                    <img src="/img/catalog-3-1920.jpg" alt="portrait of Lorenco di Kredi" class="catalog__art-img">
+                  </picture>
+                </div>
+                <div class="catalog__art-right">
+                  <h3 class="catalog__art-title">Лоренцо ди&nbsp;Креди</h3>
+                  <div class="catalog__art-time">
+                    <time datetime="1459-01-01 00:00">1459</time>
+                    <small>–</small>
+                    <time datetime="1537-01-12 00:00">12&nbsp;января 1537</time>
+                  </div>
+                  <p class="catalog__art-descr">
+                    Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили
+                    его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года
+                    овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными
+                    подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане
+                    Флоренции в&nbsp;костюмах того времени).
+                  </p>
+                </div>
               </div>
             </a>
           </article>
@@ -399,7 +434,7 @@
         <form class="contacts__form" id="request" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <input class="contacts__form-input" type="text" name="name" placeholder="Имя*" required>
           <input class="contacts__form-input" type="tel" name="phone" placeholder="Телефон*" required>
-          <button class="btn-reset contacts__form-btn">Заказать обратный звонок</button>
+          <button class="btn contacts__form-btn">Заказать обратный звонок</button>
         </form>
         <div class="contacts__social">
           <h3 class="contacts__social-text">Связаться в&nbsp;один клик</h3>
@@ -444,6 +479,7 @@
   </section>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="/js/script.js"></script>
 <script src="/js/main.js"></script>
 </html>
 <footer class="footer">
