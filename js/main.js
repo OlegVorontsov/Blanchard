@@ -16,6 +16,10 @@ const eventsSlider = new Splide('#eventsSlider', {
   gap: '50px',
   pagination: false,
   breakpoints: {
+    1260: {
+      gap: '27px'
+    },
+
     768: {
       perPage: 1,
       arrows: false,
