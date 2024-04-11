@@ -127,9 +127,14 @@ a {
 }
 
 .header__logo {
+  min-width: 173px;
+  height: 40px;
   margin-right: 179px;
-  max-width: 173px;
-  max-height: 40px;
+  background-repeat: no-repeat;
+}
+
+.header__logo-img {
+  background-image: url('../img/header-logo.svg');
 }
 
 .header__nav {
