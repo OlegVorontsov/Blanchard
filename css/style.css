@@ -360,6 +360,21 @@ a {
   stroke: var(--color-active);
 }
 
+.header__burger {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.header__burger svg {
+  width: 18px;
+  height: 18px;
+}
+
+.header__burger--close {
+  display: none;
+}
+
 /* hero */
 
 .hero__bg {
@@ -857,6 +872,7 @@ a {
   display: flex;
   gap: 20px;
   height: 50px;
+  position: relative;
 }
 
 .contacts__form-input {
@@ -894,6 +910,12 @@ a {
   font-size: 18px;
   color: var(--color-default);
   white-space: nowrap;
+}
+
+.contacts__form-btn--short {
+  display: none;
+  position: absolute;
+  bottom: -50px;
 }
 
 .contacts__form-btn::before {
@@ -952,6 +974,7 @@ a {
   font-size: 24px;
   line-height: 1.33333;
   color: var(--color-grey);
+  white-space: nowrap;
 }
 
 .contacts__social-link {

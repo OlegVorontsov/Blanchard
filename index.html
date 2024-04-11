@@ -15,6 +15,12 @@
   <div class="container">
     <div class="header__content">
       <a href="#" class="header__logo header__logo-img"></a>
+      <button aria-label="Закрыть меню" data-burger-close class="btn header__burger--close">
+        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.09082" width="29.5699" height="2.95699" transform="rotate(45 2.09082 0)" fill="#fff" />
+          <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#fff" />
+        </svg>
+      </button>
       <nav class="header__nav">
         <ul class="header__list list-reset">
           <li class="header__item">
@@ -37,6 +43,13 @@
           </li>
         </ul>
       </nav>
+      <button aria-label="Развернуть меню" data-burger class="btn header__burger" aria-expanded="false">
+        <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
+          <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
+          <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
+      </svg>
+      </button>
       <button id="search-btn" class="btn header__button-search">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="8.79564" height="2.19891"
@@ -552,7 +565,8 @@
         <form class="contacts__form" id="request" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <input class="contacts__form-input" type="text" name="name" placeholder="Имя*" required>
           <input class="contacts__form-input" type="tel" name="phone" placeholder="Телефон*" required>
-          <button class="btn contacts__form-btn">Заказать обратный звонок</button>
+          <button class="btn contacts__form-btn contacts__form-btn--long">Заказать обратный звонок</button>
+          <button class="btn contacts__form-btn contacts__form-btn--short">Заказать</button>
         </form>
         <div class="contacts__social">
           <h3 class="contacts__social-text">Связаться в&nbsp;один клик</h3>

@@ -7,7 +7,7 @@ const gallerySlider = new Splide('#gallerySlider', {
       gap: '34px'
     },
 
-    500: {
+    767: {
       perPage: 1,
       arrows: false,
       pagination: true
