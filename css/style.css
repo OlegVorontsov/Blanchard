@@ -219,10 +219,7 @@ a {
   opacity: 1;
 }
 
-.header__button-search:hover svg rect {
-  fill: #c283f3;
-}
-
+.header__button-search:hover svg rect,
 .header__button-search:hover svg path {
   fill: #c283f3;
 }
@@ -235,10 +232,7 @@ a {
   background-color: transparent;
 }
 
-.header__button-search:active svg rect {
-  fill: var(--color-default);
-}
-
+.header__button-search:active svg rect,
 .header__button-search:active svg path {
   fill: var(--color-default);
 }
@@ -254,12 +248,11 @@ a {
 .header__search-wrap.search-active {
   display: flex;
   position: absolute;
-  right: 0;
-  width: 540px;
-  height: 60px;
-  padding-left: 32px;
   align-items: center;
-  background-color: var(--color-white);
+  justify-content: end;
+  right: 0;
+  padding-left: 32px;
+  background-color: rgba(0, 0, 0, .9);
   z-index: 10;
 }
 
@@ -269,16 +262,17 @@ a {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: var(--color-black);
+  background-color: rgba(0, 0, 0, .9);
+  color: var(--color-white);
   border: none;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-white);
 }
 
 .header__input-search:focus {
   outline: none;
 }
 
-.header__button-search--active {
+.search__btn {
   margin-right: 20px;
 }
 
@@ -288,14 +282,19 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  width: 28px;
+  height: 28px;
 }
 
+.search__btn svg,
+.close__btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+.search__btn svg rect,
 .search__btn svg path {
-  transition: stroke 0.3s ease-in-out;
-}
-
-.search__btn svg rect {
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out ;
 }
 
 .search__btn:focus-visible {
@@ -307,10 +306,7 @@ a {
   outline: none;
 }
 
-.search__btn:hover svg path {
-  stroke: var(--color-default);
-}
-
+.search__btn:hover svg path,
 .search__btn:hover svg rect {
   fill: var(--color-default);
 }
@@ -319,12 +315,17 @@ a {
   background-color: transparent;
 }
 
-.search__btn:active svg path {
-  stroke: var(--color-active);
-}
-
+.search__btn:active svg path,
 .search__btn:active svg rect {
   fill: var(--color-active);
+}
+
+.close__btn svg rect {
+  fill: var(--color-white);
+}
+
+.close__btn svg circle {
+  stroke: var(--color-white);
 }
 
 .close__btn svg rect {
@@ -373,6 +374,13 @@ a {
 
 .header__burger--close {
   display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.header__burger--close svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* hero */

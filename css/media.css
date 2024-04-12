@@ -89,6 +89,15 @@
     top: 39px;
   }
 
+  .header__search-wrap.search-active {
+    top: 40px;
+    padding-left: 18px;
+  }
+
+  .search__btn {
+    margin-right: 15px;
+  }
+
   .header__nav {
     margin-left: 0;
     margin-right: 0;
@@ -230,6 +239,10 @@
 
 @media (max-width: 1020px) {
 
+  .header__input-search {
+    width: 370px;
+  }
+
   .gallery__right {
     max-width: 668px;
   }
@@ -260,6 +273,10 @@
 }
 
 @media (max-width: 768px) {
+
+  .header__input-search {
+    width: 240px;
+}
 
   .hero__bg {
     background-image: url(../img/hero-bg-768.jpg);
@@ -348,6 +365,30 @@
 
 @media (max-width: 640px) {
 
+  .header__search-wrap.search-active {
+    top: 15px;
+    padding-left: 15px;
+    width: 80%;
+  }
+
+  .header__input-search {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .search__btn,
+  .close__btn {
+    width: 18px;
+    height: 18px;
+  }
+
+  .search__btn svg,
+  .close__btn svg {
+  width: 18px;
+  height: 18px;
+  }
+
   .container {
     padding: 0 15px;
   }
@@ -431,27 +472,26 @@
     transform: rotate(-90deg);
   }
 
-
-
-
-
-
-
-
-
-
-
+  .header__burger svg rect,
   .header__burger svg path {
     transition: fill 0.3s ease-in-out;
   }
 
+  .header__burger:focus svg rect,
   .header__burger:focus svg path,
+  .header__burger:hover svg rect,
   .header__burger:hover svg path {
-    fill: #fc91e6;
+    fill: #9d5cd0;
   }
 
+  .header__burger:active,
+  .header__burger--close:active {
+    background-color: transparent;
+  }
+
+  .header__burger:active svg rect,
   .header__burger:active svg path {
-    fill: white;
+    fill: #7943a4;
   }
 
   .header__burger--close svg rect {
@@ -460,19 +500,12 @@
 
   .header__burger--close:focus svg rect,
   .header__burger--close:hover svg rect {
-    fill: #fc91e6;
+    fill: #9d5cd0;
   }
 
   .header__burger--close:active svg rect {
-    fill: white;
+    fill: #7943a4;
   }
-
-
-
-
-
-
-
 }
 
 

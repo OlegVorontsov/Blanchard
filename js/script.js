@@ -1,3 +1,9 @@
+const burger = document?.querySelector('[data-burger]');
+const burgerClose = document?.querySelector('[data-burger-close]');
+const nav = document?.querySelector('[data-header__nav]');
+const body = document.body;
+const navItems = nav?.querySelectorAll('a');
+
 window.addEventListener("DOMContentLoaded", function() {
 
     // search
@@ -40,8 +46,33 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
-
-
 ymaps.ready(init);
 
+burger?.addEventListener('click', () => {
+  body.classList.toggle('stop-scroll');
+  burgerClose?.classList.toggle('header__burger--close--active');
+  nav?.classList.toggle('nav--visible');
+});
+
+document.addEventListener('click', function handleClickOutsideBox(event) {
+  if (nav.contains(event.target)) {
+    body.classList.remove('stop-scroll');
+    burgerClose?.classList.remove('header__burger--close--active');
+    nav?.classList.remove('nav--visible');
+  }
+});
+
+burgerClose?.addEventListener('click', () => {
+  body.classList.remove('stop-scroll');
+  burgerClose?.classList.remove('header__burger--close--active');
+  nav?.classList.remove('nav--visible');
+});
+
+navItems.forEach(el => {
+  el.addEventListener('click', () => {
+    body.classList.remove('stop-scroll');
+    burgerClose?.classList.remove('header__burger--close--active');
+    nav?.classList.remove('nav--visible');
+  });
+});
 
