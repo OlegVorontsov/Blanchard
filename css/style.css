@@ -847,6 +847,10 @@ a {
   gap: 34px;
 }
 
+.projects__logo-mobile {
+  display: none;
+}
+
 /* contacts */
 
 .contacts {
@@ -923,7 +927,6 @@ a {
 .contacts__form-btn--short {
   display: none;
   position: absolute;
-  bottom: -50px;
 }
 
 .contacts__form-btn::before {

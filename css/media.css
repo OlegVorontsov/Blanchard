@@ -346,12 +346,12 @@
 
 @media (max-width: 767px) {
 
-  .contacts__form {
-    margin-bottom: 70px;
+  .gallery__right {
+    max-width: 100%;
   }
 
-  .contacts__form-input {
-    margin-right: auto;
+  .contacts__form {
+    margin-bottom: 57px;
   }
 
   .contacts__form-btn--long {
@@ -360,6 +360,14 @@
 
   .contacts__form-btn--short {
     display: block;
+    bottom: -50px;
+  }
+
+  .contacts__form-input {
+    margin-right: unset;
+    min-width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -506,6 +514,269 @@
   .header__burger--close:active svg rect {
     fill: #7943a4;
   }
+
+  .hero__bg {
+    background-image: url(../img/hero-bg-320.jpg);
+  }
+
+  .hero__content {
+    max-width: 100%;
+    padding: 50px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 0.875;
+    text-align: center;
+  }
+
+  .hero__descr {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33333;
+    text-align: center;
+}
+
+.hero__btn {
+  padding: 13px 19px;
+  font-size: 12px;
+}
+
+.about__content {
+  padding: 53px 0 40px 0;
+}
+
+.about__title {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.about__descr {
+  font-size: 14px;
+}
+
+.gallery {
+  margin-bottom: 53px;
+}
+
+.gallery__container {
+  padding: 53px 15px 50px 15px;
+}
+
+.gallery__title {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.catalog {
+  margin-bottom: 53px;
+}
+
+.catalog__title {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.catalog__descr {
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  gap: 30px;
+}
+
+.catalog__art-content {
+  height: 783px;
+}
+
+.catalog__art-pic {
+  margin-bottom: 20px;
+  height: unset;
+  min-height: 181px;
+}
+
+.catalog__art-title {
+  margin-bottom: 14px;
+}
+
+.catalog__art-time {
+  margin-bottom: 14px;
+}
+
+.events {
+  margin-bottom: 45px;
+}
+
+.events__container {
+  padding: 0 15px;
+  max-height: unset;
+}
+
+.events__title {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.events__card {
+  min-height: 683px;
+}
+
+.events__card-bottom {
+  min-height: 549px;
+  padding: 18px 17px 53px 23px;
+}
+
+.events__card-place {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.events__card-time {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+small {
+  font-size: 100%;
+}
+
+.events__card-title {
+  margin-bottom: 5px;
+  line-height: 1.39;
+}
+
+.events__card-link {
+  margin-left: 5px;
+}
+
+.projects {
+  margin-bottom: 53px;
+}
+
+.projects__title-main {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.projects__descr {
+  margin-bottom: 20px;
+  max-width: unset;
+}
+
+.projects__title {
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 1.77778;
+}
+
+.projects__list {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.projects__logo {
+  display: none;
+}
+
+.projects__logo-mobile {
+  display: block;
+}
+
+.contacts {
+  border: none;
+}
+
+.contacts__content {
+  padding: 0 0 50px 0;
+}
+
+.contacts__address {
+  margin-bottom: 15px;
+}
+
+.contacts__address-name {
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.contacts__address-place {
+  font-size: 14px;
+}
+
+.contacts__form-input {
+  min-width: 270px;
+}
+
+.contacts__form-btn {
+  padding: 12px 35px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.contacts__form-btn--short {
+  bottom: -35px;
+}
+
+.contacts__social-text {
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.77778;
+}
+
+.contacts__social-link {
+  width: 50px;
+  height: 50px;
+}
+
+.contacts__social-link svg  {
+  width: 48px;
+  height: 48px;
+}
+
+.contacts__map {
+  height: 300px;
+}
+
+.footer__content {
+  flex-direction: column-reverse;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.footer__logo-img {
+  width: 96.8px;
+  height: 21.67px;
+}
+
+.footer__right-link {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__right-link svg {
+  width: 50px;
+  height: 50px;
+}
 }
 
 
+@media (max-width: 320px) {
+
+  .contacts__form-input {
+    min-width: 262px;
+    height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__form-input:nth-child(2n) {
+    margin-bottom: 24px;
+  }
+
+}
