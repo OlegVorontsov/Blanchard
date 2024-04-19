@@ -67,17 +67,29 @@ a {
   background-color: var(--color-active);
 }
 
+.splide__pagination {
+  bottom: -1em;
+}
+
+.splide__pagination__page {
+  background: #ccc
+}
+
+.splide__pagination__page.is-active {
+  background: var(--color-default)
+}
+
 .splide__arrow {
   background: none;
   width: 50px;
 }
 
 .splide__arrow--prev {
-  left: 3px
+  left: -50px
 }
 
 .splide__arrow--next {
-  right: 3px;
+  right: -50px;
 }
 
 .splide__arrow svg {
@@ -272,12 +284,12 @@ a {
   outline: none;
 }
 
-.search__btn {
+.header__search-btn {
   margin-right: 20px;
 }
 
-.search__btn,
-.close__btn {
+.header__search-btn,
+.header__close-btn {
   padding: 0;
   border: none;
   background-color: transparent;
@@ -286,78 +298,78 @@ a {
   height: 28px;
 }
 
-.search__btn svg,
-.close__btn svg {
+.header__search-btn svg,
+.header__close-btn svg {
   width: 28px;
   height: 28px;
 }
 
-.search__btn svg rect,
-.search__btn svg path {
+.header__search-btn svg rect,
+.header__search-btn svg path {
   transition: fill 0.3s ease-in-out ;
 }
 
-.search__btn:focus-visible {
+.header__search-btn:focus-visible {
   outline: 2px solid var(--color-default);
   outline-offset: 2px;
 }
 
-.search__btn:hover {
+.header__search-btn:hover {
   outline: none;
 }
 
-.search__btn:hover svg path,
-.search__btn:hover svg rect {
+.header__search-btn:hover svg path,
+.header__search-btn:hover svg rect {
   fill: var(--color-default);
 }
 
-.search__btn:active {
+.header__search-btn:active {
   background-color: transparent;
 }
 
-.search__btn:active svg path,
-.search__btn:active svg rect {
+.header__search-btn:active svg path,
+.header__search-btn:active svg rect {
   fill: var(--color-active);
 }
 
-.close__btn svg rect {
+.header__close-btn svg rect {
   fill: var(--color-white);
 }
 
-.close__btn svg circle {
+.header__close-btn svg circle {
   stroke: var(--color-white);
 }
 
-.close__btn svg rect {
+.header__close-btn svg rect {
   transition: fill 0.3s ease-in-out;
 }
 
-.close__btn svg circle {
+.header__close-btn svg circle {
   transition: stroke 0.3s ease-in-out;
 }
 
-.close__btn:focus {
+.header__close-btn:focus {
   outline: 2px solid var(--color-default);
   outline-offset: 2px;
 }
 
-.close__btn:hover {
+.header__close-btn:hover {
   outline: none;
 }
 
-.close__btn:hover svg rect {
+.header__close-btn:hover svg rect {
   fill: var(--color-default);
 }
 
-.close__btn:hover svg circle {
+.header__close-btn:hover svg circle {
   stroke: var(--color-default);
 }
 
-.close__btn:active svg rect {
+.header__close-btn:active svg rect {
   fill: var(--color-active);
 }
 
-.close__btn:active svg circle {
+.header__close-btn:active svg circle {
   stroke: var(--color-active);
 }
 
@@ -372,13 +384,13 @@ a {
   height: 18px;
 }
 
-.header__burger--close {
+.header__burger-close {
   display: none;
   width: 20px;
   height: 20px;
 }
 
-.header__burger--close svg {
+.header__burger-close svg {
   width: 20px;
   height: 20px;
 }
@@ -472,6 +484,7 @@ a {
 
 .gallery {
   margin-bottom: 85px;
+  background-color: var(--color-black);
 }
 
 .gallery__container {
@@ -1011,27 +1024,27 @@ a {
   outline: none;
 }
 
-.contacts__social-link:focus .svg__green {
+.contacts__social-link:focus .contacts__social-green {
   fill: #a9ffaf;
 }
 
-.contacts__social-link:focus .svg__blue {
+.contacts__social-link:focus .contacts__social-blue {
   fill: #95dcff;
 }
 
-.contacts__social-link:hover .svg__green {
+.contacts__social-link:hover .contacts__social-green {
   fill: #a9ffaf;
 }
 
-.contacts__social-link:hover .svg__blue {
+.contacts__social-link:hover .contacts__social-blue {
   fill: #95dcff;
 }
 
-.contacts__social-link:active .svg__green {
+.contacts__social-link:active .contacts__social-green {
   fill: #30BF39;
 }
 
-.contacts__social-link:active .svg__blue {
+.contacts__social-link:active .contacts__social-blue {
   fill: #26A5E4;
 }
 

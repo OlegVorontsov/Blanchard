@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,7 @@
   <div class="container">
     <div class="header__content">
       <a href="#" class="header__logo header__logo-img"></a>
-      <button aria-label="Закрыть меню" data-burger-close class="btn header__burger--close">
+      <button aria-label="Закрыть меню" data-burger-close class="btn header__burger-close">
         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="2.09082" width="29.5699" height="2.95699" transform="rotate(45 2.09082 0)" fill="#fff" />
           <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#fff" />
@@ -50,7 +49,7 @@
           <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
           <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
           <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
-      </svg>
+        </svg>
       </button>
       <button id="search-btn" class="btn header__button-search">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +62,7 @@
       </button>
       <div id="search-open" class="header__search-wrap">
         <input class="header__input-search" type="search" name="search" id="search" placeholder="Поиск по сайту">
-        <button aria-label="Найти" class="header__button-search--active search__btn">
+        <button aria-label="Найти" class="header__search-btn">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="8.79564" height="2.19891"
               transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="white" />
@@ -72,7 +71,7 @@
               fill="white" />
           </svg>
         </button>
-        <button aria-label="Закрыть окно поиска" id="search-close" class="close__btn">
+        <button aria-label="Закрыть окно поиска" id="search-close" class="header__close-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
               fill="#000" />
@@ -342,35 +341,35 @@
         <div class="splide__arrows">
           <button class="splide__arrow splide__arrow-black splide__arrow--prev">
             <svg viewBox="-3 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <g id="icomoon-ignore"> </g>
-                    <path
-                      d="M13.11 29.113c7.243 0 13.113-5.871 13.113-13.113s-5.87-13.113-13.113-13.113c-7.242 0-13.113 5.871-13.113 13.113s5.871 13.113 13.113 13.113zM13.11 3.936c6.652 0 12.064 5.412 12.064 12.064s-5.412 12.064-12.064 12.064c-6.653 0-12.064-5.412-12.064-12.064s5.411-12.064 12.064-12.064z"
-                      fill="#000000"> </path>
-                    <path
-                      d="M13.906 21.637l0.742 0.742 6.378-6.379-6.378-6.379-0.742 0.742 5.112 5.112h-12.727v1.049h12.727z"
-                      fill="#000000"> </path>
-                  </g>
-                </svg>
+              xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="icomoon-ignore"> </g>
+                <path
+                  d="M13.11 29.113c7.243 0 13.113-5.871 13.113-13.113s-5.87-13.113-13.113-13.113c-7.242 0-13.113 5.871-13.113 13.113s5.871 13.113 13.113 13.113zM13.11 3.936c6.652 0 12.064 5.412 12.064 12.064s-5.412 12.064-12.064 12.064c-6.653 0-12.064-5.412-12.064-12.064s5.411-12.064 12.064-12.064z"
+                  fill="#000000"> </path>
+                <path
+                  d="M13.906 21.637l0.742 0.742 6.378-6.379-6.378-6.379-0.742 0.742 5.112 5.112h-12.727v1.049h12.727z"
+                  fill="#000000"> </path>
+              </g>
+            </svg>
           </button>
           <button class="splide__arrow splide__arrow-black splide__arrow--next">
             <svg viewBox="-3 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <g id="icomoon-ignore"> </g>
-                    <path
-                      d="M13.11 29.113c7.243 0 13.113-5.871 13.113-13.113s-5.87-13.113-13.113-13.113c-7.242 0-13.113 5.871-13.113 13.113s5.871 13.113 13.113 13.113zM13.11 3.936c6.652 0 12.064 5.412 12.064 12.064s-5.412 12.064-12.064 12.064c-6.653 0-12.064-5.412-12.064-12.064s5.411-12.064 12.064-12.064z"
-                      fill="#000000"> </path>
-                    <path
-                      d="M13.906 21.637l0.742 0.742 6.378-6.379-6.378-6.379-0.742 0.742 5.112 5.112h-12.727v1.049h12.727z"
-                      fill="#000000"> </path>
-                  </g>
-                </svg>
+              xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="icomoon-ignore"> </g>
+                <path
+                  d="M13.11 29.113c7.243 0 13.113-5.871 13.113-13.113s-5.87-13.113-13.113-13.113c-7.242 0-13.113 5.871-13.113 13.113s5.871 13.113 13.113 13.113zM13.11 3.936c6.652 0 12.064 5.412 12.064 12.064s-5.412 12.064-12.064 12.064c-6.653 0-12.064-5.412-12.064-12.064s5.411-12.064 12.064-12.064z"
+                  fill="#000000"> </path>
+                <path
+                  d="M13.906 21.637l0.742 0.742 6.378-6.379-6.378-6.379-0.742 0.742 5.112 5.112h-12.727v1.049h12.727z"
+                  fill="#000000"> </path>
+              </g>
+            </svg>
           </button>
         </div>
         <div class="splide__track">
@@ -414,7 +413,8 @@
                     <h3 class="events__card-title">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.
                     </h3>
                     <p class="events__card-descr">
-                      Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                      Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством
+                      простого
                       факта
                     </p>
                   </div>
@@ -506,7 +506,8 @@
                     </div>
                     <h3 class="events__card-title">&laquo;Босх и&nbsp;Брейгели. Загадки мистической эпохи&raquo;</h3>
                     <p class="events__card-descr">
-                      Выставка посвящена творчеству самых загадочных гениев эпохи Возрождения, которые не&nbsp;страшились
+                      Выставка посвящена творчеству самых загадочных гениев эпохи Возрождения, которые
+                      не&nbsp;страшились
                       иронии
                       и&nbsp;сатиры, исследуя человеческую греховность, помимо крестьян изображая пьяниц, бродяг
                       и&nbsp;нечистую
@@ -579,7 +580,7 @@
               <a href="#contacts" class="contacts__social-link" aria-label="WhatsApp">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_648)">
-                    <path class="svg__green"
+                    <path class="contacts__social-green"
                       d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
                       fill="#30BF39" />
                     <path
@@ -598,7 +599,7 @@
               <a href="#contacts" class="contacts__social-link" aria-label="Telegram">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_191243_651)">
-                    <path class="svg__blue"
+                    <path class="contacts__social-blue"
                       d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
                       fill="#26A5E4" />
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -620,10 +621,10 @@
       <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     </div>
   </section>
-</body>
 <script src="/js/splide.min.js"></script>
 <script src="/js/script.js"></script>
 <script src="/js/main.js"></script>
+</body>
 
 </html>
 <footer class="footer">

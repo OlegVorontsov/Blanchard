@@ -50,28 +50,28 @@ ymaps.ready(init);
 
 burger?.addEventListener('click', () => {
   body.classList.toggle('stop-scroll');
-  burgerClose?.classList.toggle('header__burger--close--active');
+  burgerClose?.classList.toggle('header__burger-close--active');
   nav?.classList.toggle('nav--visible');
 });
 
 document.addEventListener('click', function handleClickOutsideBox(event) {
   if (nav.contains(event.target)) {
     body.classList.remove('stop-scroll');
-    burgerClose?.classList.remove('header__burger--close--active');
+    burgerClose?.classList.remove('header__burger-close--active');
     nav?.classList.remove('nav--visible');
   }
 });
 
 burgerClose?.addEventListener('click', () => {
   body.classList.remove('stop-scroll');
-  burgerClose?.classList.remove('header__burger--close--active');
+  burgerClose?.classList.remove('header__burger-close--active');
   nav?.classList.remove('nav--visible');
 });
 
 navItems.forEach(el => {
   el.addEventListener('click', () => {
     body.classList.remove('stop-scroll');
-    burgerClose?.classList.remove('header__burger--close--active');
+    burgerClose?.classList.remove('header__burger-close--active');
     nav?.classList.remove('nav--visible');
   });
 });
