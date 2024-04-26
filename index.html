@@ -54,7 +54,7 @@
             <path d="M24 25.0479H0V28.7H24V25.0479Z" fill="white" />
           </svg>
         </button>
-        <button id="search-btn" class="btn header__button-search">
+        <button aria-label="Открыть окно поиска" id="search-btn" class="btn header__button-search">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="8.79564" height="2.19891"
               transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)" fill="white" />
@@ -91,7 +91,8 @@
   <section id="hero" class="hero">
     <div class="container hero__bg">
       <div class="hero__content">
-        <h1 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h1>
+        <h1 class="hero__title-main">Blanchard художественная галерея</h1>
+        <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
         <p class="hero__descr">
           Мы&nbsp;вынуждены отталкиваться от того, что реализация намеченных
           плановых заданий создаёт предпосылки
@@ -618,9 +619,9 @@
           </ul>
         </div>
       </div>
-      <div id="map" class="contacts__map"></div>
-      <script src="https://api-maps.yandex.ru/2.1/?apikey=bb04afbd-3ad5-4912-a121-cc39d306090b&lang=ru_RU"></script>
     </div>
+    <div id="map" class="contacts__map"></div>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=bb04afbd-3ad5-4912-a121-cc39d306090b&lang=ru_RU"></script>
   </section>
   <script src="/js/splide.min.js"></script>
   <script src="/js/script.js"></script>

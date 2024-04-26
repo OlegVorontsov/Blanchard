@@ -409,6 +409,10 @@ a {
   padding: 145px 0;
 }
 
+.hero__title-main {
+  display: none;
+}
+
 .hero__title {
   margin: 0;
   margin-bottom: 20px;
